@@ -69,13 +69,13 @@ new version explicitly, like `make release bump="--new-version 2.0.0-alpha.1 dev
 
 ## Documentation
 
-### `eth_keyfile.load_keyfile(path_or_file_obj) --> keyfile_json`
+### `newchain_keyfile.load_keyfile(path_or_file_obj) --> keyfile_json`
 
 Takes either a filesystem path represented as a string or a file object and
 returns the parsed keyfile json as a python dictionary.
 
 ```python
->>> from eth_keyfile import load_keyfile
+>>> from newchain_keyfile import load_keyfile
 >>> load_keyfile('path/to-my-keystore/keystore.json')
 {
     "crypto" : {
@@ -99,7 +99,7 @@ returns the parsed keyfile json as a python dictionary.
 ```
 
 
-### `eth_keyfile.create_keyfile_json(private_key, password, kdf="pbkdf2", work_factor=None) --> keyfile_json`
+### `newchain_keyfile.create_keyfile_json(private_key, password, kdf="pbkdf2", work_factor=None) --> keyfile_json`
 
 Takes the following parameters:
 
@@ -135,7 +135,7 @@ Returns the keyfile json as a python dictionary.
 }
 ```
 
-### `eth_keyfile.decode_keyfile_json(keyfile_json, password) --> private_key`
+### `newchain_keyfile.decode_keyfile_json(keyfile_json, password) --> private_key`
 
 Takes the keyfile json as a python dictionary and the password for the keyfile,
 returning the decoded private key.
@@ -164,7 +164,7 @@ returning the decoded private key.
 b'\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01'
 ```
 
-### `eth_keyfile.extract_key_from_keyfile(path_or_file_obj, password) --> private_key`
+### `newchain_keyfile.extract_key_from_keyfile(path_or_file_obj, password) --> private_key`
 
 Takes a filesystem path represented by a string or a file object and the
 password for the keyfile.  Returns the private key as a bytestring.

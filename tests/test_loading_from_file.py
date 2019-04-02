@@ -4,7 +4,7 @@ import pytest
 
 from eth_utils import decode_hex
 
-from eth_keyfile.keyfile import (
+from newchain_keyfile.keyfile import (
     create_keyfile_json,
     load_keyfile,
     extract_key_from_keyfile,
