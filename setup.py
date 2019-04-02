@@ -10,7 +10,7 @@ from setuptools import (
 deps = {
     'keyfile': [
         "eth-utils>=1.3.0,<2",
-        "eth-keys>=0.2.1,<0.3.0",
+        "newchain-keys>=0.1.0",
         "pycryptodome>=3.6.6,<4",
     ],
     'test': [
@@ -45,25 +45,25 @@ deps['dev'] = (
 install_requires = deps['keyfile']
 
 setup(
-    name='eth-keyfile',
+    name='newchain-keyfile',
     # *IMPORTANT*: Don't manually change the version here. Use the 'bumpversion' utility.
-    version='0.5.1',
+    version='0.1.0',
     description=(
-        "A library for handling the encrypted keyfiles used to store ethereum "
+        "A library for handling the encrypted keyfiles used to store newchain "
         "private keys."
     ),
     long_description_markdown_filename='README.md',
-    author='Piper Merriam',
-    author_email='pipermerriam@gmail.com',
-    url='https://github.com/ethereum/eth-keyfile',
+    author='Xia Wu',
+    author_email='xiawu@zeuux.org',
+    url='https://github.com/newtonproject/newchain-keyfile',
     include_package_data=True,
     install_requires=install_requires,
     extras_require=deps,
     setup_requires=['setuptools-markdown'],
-    py_modules=['eth_keyfile'],
+    py_modules=['newchain_keyfile'],
     license="MIT",
     zip_safe=False,
-    keywords='ethereum',
+    keywords='newchain',
     packages=find_packages(exclude=["tests", "tests.*"]),
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
