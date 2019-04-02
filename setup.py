@@ -47,7 +47,7 @@ install_requires = deps['keyfile']
 setup(
     name='newchain-keyfile',
     # *IMPORTANT*: Don't manually change the version here. Use the 'bumpversion' utility.
-    version='0.1.1',
+    version='0.1.2',
     description=(
         "A library for handling the encrypted keyfiles used to store newchain "
         "private keys."
