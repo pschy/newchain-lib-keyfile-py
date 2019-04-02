@@ -4,7 +4,7 @@ import pkg_resources
 import warnings
 import sys
 
-from eth_keyfile.keyfile import (  # noqa: F401
+from newchain_keyfile.keyfile import (  # noqa: F401
     load_keyfile,
     create_keyfile_json,
     decode_keyfile_json,
