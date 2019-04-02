@@ -20,4 +20,4 @@ if sys.version_info.major < 3:
     warnings.resetwarnings()
 
 
-__version__ = pkg_resources.get_distribution("eth-keyfile").version
+__version__ = pkg_resources.get_distribution("newchain-keyfile").version
