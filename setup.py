@@ -10,7 +10,7 @@ from setuptools import (
 deps = {
     'keyfile': [
         "eth-utils>=2,<3",
-        "newchain-keys>=0.1.0",
+        "newchain-keys>=0.2.0",
         "pycryptodome>=3.6.6,<4",
     ],
     'test': [
@@ -58,7 +58,6 @@ setup(
     include_package_data=True,
     install_requires=install_requires,
     extras_require=deps,
-    setup_requires=['setuptools-markdown'],
     py_modules=['newchain_keyfile'],
     license="MIT",
     zip_safe=False,
