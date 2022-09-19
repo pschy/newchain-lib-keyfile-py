@@ -40,6 +40,8 @@ deps['dev'] = (
     deps['lint']
 )
 
+with open('./README.md') as readme:
+    long_description = readme.read()
 
 install_requires = deps['keyfile']
 
@@ -51,10 +53,11 @@ setup(
         "A library for handling the encrypted keyfiles used to store newchain "
         "private keys."
     ),
-    long_description_markdown_filename='README.md',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Xia Wu',
     author_email='xiawu@zeuux.org',
-    url='https://github.com/newtonproject/newchain-keyfile',
+    url='https://github.com/newtonproject/newchain-lib-keyfile-py',
     include_package_data=True,
     install_requires=install_requires,
     extras_require=deps,
